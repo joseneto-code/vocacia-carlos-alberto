@@ -2,4 +2,4 @@
 2:I[6169,["/vocacia-carlos-alberto/_next/static/chunks/06gfg7jgldr-y.js","/vocacia-carlos-alberto/_next/static/chunks/0xyn5a8y.8w.o.js"],"default"]
 3:I[87762,["/vocacia-carlos-alberto/_next/static/chunks/06gfg7jgldr-y.js","/vocacia-carlos-alberto/_next/static/chunks/0xyn5a8y.8w.o.js"],"default"]
 4:[]
-0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"TwYFyxC-px5-xig5ALuyA"}
+0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"3F0TVkPvlL87PWDEUPJ_s"}
