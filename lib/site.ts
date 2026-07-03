@@ -3,6 +3,7 @@ export const site = {
   lawyer: "Dr. Carlos Alberto",
   oab: "OAB/MS 28343",
   url: "https://henriquecarlosalberto.adv.br",
+  publicBasePath: process.env.NODE_ENV === "production" ? "/vocacia-carlos-alberto" : "",
   // Telefone usado para chamadas e WhatsApp (formato internacional, sem símbolos)
   whatsapp: "556784458320",
   phoneDisplay: "+55 67 8445-8320",
@@ -20,4 +21,8 @@ export const site = {
 
 export function whatsappLink(message: string = site.whatsappMessage) {
   return `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(message)}`
+}
+
+export function publicAsset(path: string) {
+  return `${site.publicBasePath}${path}`
 }

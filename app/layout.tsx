@@ -1,7 +1,7 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Inter, Playfair_Display } from 'next/font/google'
-import { site } from '@/lib/site'
+import { publicAsset, site } from '@/lib/site'
 import './globals.css'
 
 const inter = Inter({ variable: '--font-inter', subsets: ['latin'] })
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
   authors: [{ name: site.lawyer }],
   generator: 'v0.app',
   icons: {
-    icon: '/icon.png',
-    shortcut: '/icon.png',
-    apple: '/apple-icon.png',
+    icon: publicAsset('/icon.png'),
+    shortcut: publicAsset('/icon.png'),
+    apple: publicAsset('/apple-icon.png'),
   },
   alternates: {
     canonical: '/',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
       'Atendimento imediato para casos cíveis e criminais em Maringá-PR, com defesa estratégica e sigilo profissional.',
     images: [
       {
-        url: '/images/dr-carlos-alberto.png',
+        url: publicAsset('/images/dr-carlos-alberto.png'),
         width: 1200,
         height: 630,
         alt: 'Dr. Carlos Alberto, advogado cível e criminal em Maringá',
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     title: 'Advogado Cível e Criminal em Maringá | Atendimento 24 Horas',
     description:
       'Atendimento imediato para casos cíveis e criminais em Maringá-PR.',
-    images: ['/images/dr-carlos-alberto.png'],
+    images: [publicAsset('/images/dr-carlos-alberto.png')],
   },
   robots: {
     index: true,
@@ -81,7 +81,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Attorney',
   name: site.lawyer,
-  image: `${site.url}/images/dr-carlos-alberto.png`,
+  image: `${site.url}${publicAsset('/images/dr-carlos-alberto.png')}`,
   url: site.url,
   telephone: `+${site.whatsapp}`,
   email: site.email,
